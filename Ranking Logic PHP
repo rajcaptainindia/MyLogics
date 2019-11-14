@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$numbers = array(13,13, 2, 11);
+rsort($numbers);
+
+$arrlength = count($numbers);
+for($x = 0; $x < $arrlength; $x++) {
+    echo $numbers[$x];
+    echo "<br>";
+}
+ $colors=array("a","b","c","d");
+
+  for($i=0;$i<3;$i++){
+    if($numbers[$i]==$numbers[$i+1]){
+      $colors[$i+1]=$colors[$i];
+    }
+  }
+  for($i=0;$i<4;$i++){
+   echo $colors[$i]; 
+  }
+?>
+
+</body>
+</html>
